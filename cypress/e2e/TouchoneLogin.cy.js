@@ -20,8 +20,5 @@ describe('Pagina de Login', () => {
     cy.get('.MuiInputBase-input').type('123456789')
 
   })
-
-  
-
  
 })
