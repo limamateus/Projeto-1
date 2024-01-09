@@ -17,7 +17,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
+      - name: Setup Node.js enviroment
+        uses: actions/setup-node@2.2.0
+        with:
+          node-version: ${{matrix.node-version}}
       - name: Install dependencies
         run: npm install
 
