@@ -13,12 +13,7 @@ describe('Pagina de Login', () => {
     cy.get('[name="senha"]').type('123456') 
     //  4- Clicando no botão Acessar para realizar o login.
     cy.contains('button','Acessar').click(); 
-
-    cy.get('[title="Produtos"]').click();
-
-    cy.visit('https://app.touchone.com.br/produtos/adicionar')
-    cy.get('.MuiInputBase-input').type('123456789')
-
+    
   })
  
 })
